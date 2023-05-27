@@ -1,7 +1,13 @@
 import AuthForm from "./AuthForm";
 
-function Login() {
-  return <AuthForm title="Вход" buttonText="Войти" />;
+function Login(props) {
+  return (
+    <AuthForm
+      title="Вход"
+      buttonText="Войти"
+      handleSubmit={props.handleLogInSubmit}
+    />
+  );
 }
 
 export default Login;

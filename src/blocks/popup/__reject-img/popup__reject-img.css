@@ -1,0 +1,8 @@
+.popup__reject-img {
+  background-image: url(../../../images/rejected.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+  margin: 60px 155px 32px;
+}
