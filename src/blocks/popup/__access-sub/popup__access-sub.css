@@ -1,0 +1,13 @@
+.popup__access-sub {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000;
+  max-width: 358px;
+  align-self: center;
+  margin: 0;
+  padding-bottom: 60px;
+}

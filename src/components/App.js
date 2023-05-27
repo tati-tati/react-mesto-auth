@@ -20,6 +20,7 @@ function App() {
   const [isAddPlacePopupOpen, setAddPlacePopupOpen] = useState(false);
   const [isEditAvatarPopupOpen, setEditAvatarPopupOpen] = useState(false);
   const [isImagePopupOpen, setImagePopupOpen] = useState(false);
+  const [isAccessPopupOpen, setAccessPopupOpen] = useState(false);
 
   const [selectedCard, setSelectedCard] = useState({});
 
@@ -163,7 +164,8 @@ function App() {
 
         <Footer />
 
-        <InfoTooltip />
+        <InfoTooltip isOpen={isAccessPopupOpen} className='' onClose={closeAllPopups}
+ />
 
         <ImagePopup
           card={selectedCard}
