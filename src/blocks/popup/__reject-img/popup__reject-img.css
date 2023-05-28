@@ -5,4 +5,11 @@
   width: 120px;
   height: 120px;
   margin: 60px 155px 32px;
+  font-size: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__reject-img  {
+    margin: 50px 80px 40px;
+  }
 }

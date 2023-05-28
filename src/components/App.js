@@ -39,21 +39,21 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if(localStorage.getItem('jwt')){
+    if (localStorage.getItem("jwt")) {
       checkToken()
-      .then((res) => {
-       if(res && typeof res === 'object') {
-        setLoggedIn(true);
-        console.log(res);
-        setUserEmail(res.data.email);
-        navigate('/', {replace: true})
-       }
-      })
-      .catch((err) => {
-        console.log(err)
-      })
+        .then((res) => {
+          if (res && typeof res === "object") {
+            setLoggedIn(true);
+            // console.log(res);
+            setUserEmail(res.data.email);
+            navigate("/", { replace: true });
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
     api
@@ -189,7 +189,7 @@ function App() {
   function handleLogInSubmit({ password, email }) {
     logIn(password, email)
       .then((res) => {
-        console.log("handleSubmitApi", res);
+        // console.log("handleSubmitApi", res);
         if (res !== false) {
           setLoggedIn(true);
           setUserEmail(email);
@@ -206,8 +206,8 @@ function App() {
   }
 
   function handleExit() {
-    setUserEmail('');
-    localStorage.removeItem('jwt');
+    setUserEmail("");
+    localStorage.removeItem("jwt");
   }
 
   return (

@@ -1,5 +1,12 @@
 .auth__form {
-max-width: 358px;
-margin: 0 auto;
+  max-width: 358px;
+  margin: 0 auto;
+  padding: 0;
+}
 
+@media screen and (max-width: 767px) {
+  .auth__form {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }

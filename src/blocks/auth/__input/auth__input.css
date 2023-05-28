@@ -9,9 +9,10 @@
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
-  padding-bottom: 13px;
+  padding-bottom: 8px;
   padding-top: 30px;
   box-sizing: border-box;
+  margin: 0;
 }
 
 .auth__input:focus {

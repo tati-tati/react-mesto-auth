@@ -9,5 +9,13 @@
   max-width: 358px;
   align-self: center;
   margin: 0;
+  padding: 0;
   padding-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__access-sub {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

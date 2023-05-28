@@ -6,7 +6,7 @@ function Header(props) {
   return (
     <header className="header">
       <img className="header__logo" src={logo} alt="логотип место" />
-      <div>
+      <div className="header__container">
         <p className="header__user-email">{props.email}</p>
         <Routes>
           <Route
