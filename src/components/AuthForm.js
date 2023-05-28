@@ -30,12 +30,14 @@ function AuthForm(props) {
           placeholder="Email"
           type="email"
           onChange={handleInputEmail}
+          value={email}
         />
         <input
           className="auth__input"
           placeholder="Пароль"
           type="password"
           onChange={handleInputPassword}
+          value={password}
         />
         <button className="auth__button button" type="submit">
           {props.buttonText}
